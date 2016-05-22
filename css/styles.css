@@ -1,0 +1,65 @@
+.nav {
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.nav form {
+    text-align: center;
+}
+
+.nav form input {
+    border-style: solid;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#searchBox {
+    width: 460px;
+}
+
+body {
+    background-color: #BDBDBD;
+}
+
+/***********************/
+/*    Photo Gallery    */
+/***********************/
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.container img {
+    width: 175px;
+}
+
+.galleryContainer {
+    padding-top: 82px;
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 25px;
+    width:auto;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+/*=======================
+
+       Media Queries
+
+========================*/
+
+@media screen and (min-width: 760px) {
+
+}
+
+@media screen and (min-width: 1025px) {
+
+}
