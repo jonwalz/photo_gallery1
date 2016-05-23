@@ -28,16 +28,25 @@ body {
 /***********************/
 
 .container {
-    width: 700px;
+    width: 980px;
     margin: 0 auto;
 }
 
 .container img {
-    width: 175px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+.col {
+    display: inline-block;
+    float: left;
 }
 
-.galleryContainer {
-    padding-top: 82px;
+.col:not(:last-child) {
+    margin-right: 60px;
+}
+.galleryContainerRow {
+    padding-top: 112px;
 }
 
 .white-popup {
@@ -49,6 +58,11 @@ body {
     margin: 0 auto;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /*=======================
 
