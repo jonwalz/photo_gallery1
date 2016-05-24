@@ -1,8 +1,17 @@
+/* Base Styles */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .nav {
     background-color: white;
     padding: 20px;
     position: fixed;
     width: 100%;
+    z-index: 2000;
 }
 
 .nav form {
@@ -16,13 +25,18 @@
 }
 
 #searchBox {
-    width: 460px;
+    width: 100%;
+    max-width: 460px;
 }
 
 body {
     background-color: #BDBDBD;
 }
 
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
 
 /*====== Zoom effect ======*/
 
@@ -56,25 +70,22 @@ body {
 /*    Photo Gallery    */
 /***********************/
 
-.container {
-    width: 980px;
-    margin: 0 auto;
+.col {
+    max-width: 180px;
+    margin: 0 auto 60px;
 }
 
-.container img {
-    width: 200px;
-    margin: 0;
+.col a {
+    margin: 0 auto;
+    width: 100%;
+}
+.col a img {
+    max-width: 100%;
     padding: 0;
 }
-.col {
-    display: inline-block;
-    float: left;
-}
-
-.col:not(:last-child) {
-    margin-right: 60px;
-}
 .galleryContainerRow {
+    max-width: 70%;
+    margin: 0 auto;
     padding-top: 112px;
 }
 
@@ -99,10 +110,14 @@ body {
 
 ========================*/
 
-@media screen and (min-width: 760px) {
-
-}
-
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 520px) {
+    #searchBox {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .col {
+        display: inline-block;
+        width: 50%;
+    }
 
 }

@@ -21,4 +21,11 @@ $(document).ready(function () {
         }
 
     });
+
+    // jQuery plugin to search contents of title attr in <a> elements
+
+    $('#searchBox').hideseek({
+        list: '.col',
+        attribute: 'title'
+    });
 });
